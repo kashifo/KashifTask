@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/root_layout"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_margin="16dp"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Food"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Size"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:textColor="@color/black"
+                />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Variety"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroupVariety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-Veg"
+                android:textColor="@color/black"
+                />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_marginTop="25dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
